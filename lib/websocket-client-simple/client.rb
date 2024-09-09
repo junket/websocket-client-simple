@@ -65,7 +65,7 @@ module WebSocket
                   end
                 end
               rescue => e
-                Thread.current.backtrace
+                puts Thread.current.backtrace
                 emit :error, e
               end
             end
